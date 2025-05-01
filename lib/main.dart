@@ -36,19 +36,19 @@ class _LiveStreamScreenState extends State<LiveStreamScreen> {
       ),
       body: InAppWebView(
         initialUrlRequest: URLRequest(
-          url: Uri.parse('https://www.capoplayer.net/play/winsportsplus.php'), // Tu URL de transmisión
+          url: Uri.parse('https://www.capoplayer.net/play/winsportsplus.php'), 
         ),
         onWebViewCreated: (InAppWebViewController controller) {
           _webViewController = controller;
         },
         onLoadStart: (InAppWebViewController controller, Uri? url) {
-          // Aquí puedes agregar un cargador o algo mientras se carga la página.
+          
         },
         onLoadStop: (InAppWebViewController controller, Uri? url) {
-          // Aquí puedes hacer algo cuando la página termine de cargar.
+          
         },
         onProgressChanged: (InAppWebViewController controller, int progress) {
-          // Este callback puede usarse para manejar la carga de la página.
+          
         },
       ),
     );
