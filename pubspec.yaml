@@ -1,0 +1,32 @@
+name: futbol
+description: A new Flutter project to display live stream of a football match.
+
+publish_to: 'none' # Remove this line if you're planning to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"  # Asegúrate de que este rango sea compatible con tu versión de Flutter
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_inappwebview: ^5.3.0 # Agrega esta dependencia para usar WebView en Flutter Web y dispositivos móviles
+  # Si estás usando otros paquetes, agréguelos aquí.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+# Añade esta sección si necesitas usar assets (imágenes, fuentes, etc.)
+assets:
+  - assets/images/  # Aquí puedes agregar imágenes si las usas en tu app
+
+# Si usas iconos personalizados:
+flutter_icons:
+  android: true
+  ios: true
+  # Puedes agregar más configuraciones para personalizar el icono de la app.
